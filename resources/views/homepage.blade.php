@@ -22,7 +22,10 @@
 
         <ul>
             @foreach ($trains as $train)
-                
+                <li> 
+                    <h4>{{ $train->'departure_time' }}</h4>
+                    <h4>{{ $train->'arrival_time' }}</h4>
+                </li>
             @endforeach
         </ul>
     </main>
